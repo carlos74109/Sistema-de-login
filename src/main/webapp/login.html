@@ -1,0 +1,73 @@
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<style> 
+	body{
+		font-family: Arial, Helvetica, sans-serif;
+		background-image: linear-gradient(45deg, cyan, yellow); 
+	}
+	div{
+		background-color: rgba(0, 0, 0, 0.9);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 80px;
+		border-radius: 15px;
+		color: white;
+	}
+	input{
+		padding: 15px;
+		border: none;
+		outline: none;
+		font-size: 15px;
+	}
+	.botao-login{
+		background-color: dodgerblue;
+		border: none;
+		padding: 15px;
+		width: 100%;
+		border-radius: 10px;
+		font-size: 15px;
+	}
+	.botao-login:hover{
+		background-color: deepskyblue;
+		cursor: pointer;
+	}
+
+	.botao1{
+		text-decoration: none;
+		background-color: rgb(96, 130, 223);
+		padding: 5px 10px 5px 10px;
+		color: rgb(0, 0, 0);
+		font-size: 15px;
+		font-weight: 700;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	.botao1:hover {
+		background-color: rgb(78, 107, 204);
+		cursor: pointer;
+	}
+ </style>
+</head>
+<body>
+	<div>
+		<h1>Login</h1>
+			<form action="logar" method="post" name="formLogar">
+				<input type="email" name="emailLogin" placeholder="Digite seu email:">
+				<br><br>
+				<input type="password" name="senhaLogin" placeholder="Digite sua senha:">
+				<br><br>
+				<input type="button" value="Logar" class="botao-login" onclick="validarLogin()">
+				<br><br>
+			</form>
+			
+			<a href="cadastro.html" class="botao1">Cadastrar</a>
+	</div>
+	
+	
+	<script src="scripts/checarLogin.js"></script>
+</body>
+</html>
